@@ -1,0 +1,18 @@
+fydelis_bridge:
+  ros__parameters:
+    listen_host: 127.0.0.1     # NUNCA 0.0.0.0 fora de rede isolada
+    listen_port: 9090
+    publish_rate: 50.0
+    max_joint_velocity: 2.0    # rad/s — limita o slew, evita saltos
+    command_timeout: 1.0       # s — watchdog
+    idle_timeout: 30.0         # s — fecha clientes inativos
+    max_command_rate: 250.0    # msgs/s por cliente
+    max_clients: 4
+    joint_names:
+      - neck_joint
+      - right_shoulder_joint
+      - left_shoulder_joint
+      - right_hip_joint
+      - left_hip_joint
+    joint_min: [-1.57, -3.14, -3.14, -1.57, -1.57]
+    joint_max: [ 1.57,  3.14,  3.14,  1.57,  1.57]

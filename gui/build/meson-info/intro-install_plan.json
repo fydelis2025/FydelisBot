@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/build/fydelisbot-gui": {
+      "destination": "{bindir}/fydelisbot-gui",
+      "tag": "runtime",
+      "subproject": null,
+      "install_rpath": null
+    }
+  }
+}

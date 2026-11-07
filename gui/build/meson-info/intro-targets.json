@@ -1,0 +1,99 @@
+[
+  {
+    "name": "fydelisbot-gui",
+    "id": "fydelisbot-gui@exe",
+    "type": "executable",
+    "defined_in": "/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/meson.build",
+    "filename": [
+      "/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/build/fydelisbot-gui"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "c",
+        "machine": "host",
+        "compiler": [
+          "cc"
+        ],
+        "parameters": [
+          "-I/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/build/fydelisbot-gui.p",
+          "-I/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/build",
+          "-I/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui",
+          "-I/usr/include/gtk-4.0",
+          "-I/usr/include/pango-1.0",
+          "-I/usr/include/glib-2.0",
+          "-I/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+          "-I/usr/include/sysprof-6",
+          "-I/usr/include/harfbuzz",
+          "-I/usr/include/freetype2",
+          "-I/usr/include/libpng16",
+          "-I/usr/include/libmount",
+          "-I/usr/include/blkid",
+          "-I/usr/include/fribidi",
+          "-I/usr/include/cairo",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/gdk-pixbuf-2.0",
+          "-I/usr/include/x86_64-linux-gnu",
+          "-I/usr/include/webp",
+          "-I/usr/include/graphene-1.0",
+          "-I/usr/lib/x86_64-linux-gnu/graphene-1.0/include",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-Wpedantic",
+          "-std=c11",
+          "-O0",
+          "-g",
+          "-mfpmath=sse",
+          "-msse",
+          "-msse2",
+          "-pthread"
+        ],
+        "sources": [
+          "/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/main.c",
+          "/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/transport.c"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "/usr/lib/x86_64-linux-gnu/libgtk-4.so",
+          "/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so",
+          "/usr/lib/x86_64-linux-gnu/libpango-1.0.so",
+          "/usr/lib/x86_64-linux-gnu/libharfbuzz.so",
+          "/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so",
+          "/usr/lib/x86_64-linux-gnu/libcairo-gobject.so",
+          "/usr/lib/x86_64-linux-gnu/libcairo.so",
+          "/usr/lib/x86_64-linux-gnu/libvulkan.so",
+          "/usr/lib/x86_64-linux-gnu/libgraphene-1.0.so",
+          "/usr/lib/x86_64-linux-gnu/libgio-2.0.so",
+          "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so",
+          "/usr/lib/x86_64-linux-gnu/libglib-2.0.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "gtk4"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": true,
+    "install_filename": [
+      "/home/fydelis/\u00c1rea de trabalho/FydelisBot/gui/install/bin/fydelisbot-gui"
+    ]
+  }
+]
